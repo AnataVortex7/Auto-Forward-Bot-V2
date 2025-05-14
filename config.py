@@ -8,7 +8,7 @@ class Config:
     DATABASE_URI = environ.get("DATABASE", "mongodb+srv://chhjgjkkjhkjhkjh@cluster0.xowzpr4.mongodb.net/")
     DATABASE_NAME = environ.get("DATABASE_NAME", "forward-bot")
     BOT_OWNER_ID = [int(id) for id in environ.get("BOT_OWNER_ID", '7268596608').split()]
-
+    PORT = int(os.environ.get("PORT", 8080))
 class temp(object): 
     lock = {}
     CANCEL = {}
